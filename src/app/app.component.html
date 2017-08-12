@@ -1,0 +1,48 @@
+<div class="container">
+    <h1 class="text-center">{{title}}</h1>
+    <button class="btn btn-default btn-lg" (click)='sayHello()'>Click Me</button>
+    <img [style.height.px]='height' 
+         [style.width.px]='width'
+         
+         src="images/men&women.jpg" />
+    <!--<appchild [message]='title'></appchild>-->
+    
+    <h1 class="text-center">{{title}}</h1>
+    <br/>
+    <div class="row">
+        <table class="table">
+            <thead>
+                <td>Image Url</td>
+                <th>Product Name</th>
+                <th>Product Code</th>
+                <th>Product Release</th>
+                <th>Description</th>
+                
+            </thead>
+            <tbody>
+                <tr *ngFor="let t of tasks">
+                    <td><img [src]="t.imageUrl" [style.width.px]='imgWidth' 
+                             [style.margin.px]='imgMargin'></td>
+                    <td>{{t.productName}}</td>
+                    <td>{{t.productCode}}</td>
+                    <td>{{t.releaseDate}}</td>
+                    <td>{{t.description}}</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+
+
+<div>
+	 <!-- <products></products>
+	<header-component></header-component>
+	<slider-component></slider-component>
+	<navigation-component></navigation-component>
+	<footer-component></footer-component> -->
+	
+</div>
+
+

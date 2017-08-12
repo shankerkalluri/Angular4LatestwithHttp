@@ -1,0 +1,146 @@
+
+<!-- header section -->
+
+<div class="row" id="header">
+	<div class="header-inner">
+		<div class="top-bar hidden-xs">
+			<ul class="menu nav">
+				<li class="first expanded dropdown active">
+				<!--<a href="#" id="dropdwn-hide" class="dropdown-toggle active">Travel Tool <span class="caret"></span></a> | -->
+					<ul class="nav nav-pills">
+  
+						<li role="presentation" class="dropdown" >
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+								Travel Tool <span class="caret"></span>
+							</a> |
+							<ul class="dropdown-menu" *ngFor="#t of tasks">
+							    <li class="leaf selectHide-click"><a href="#">{{t.name}}</a></li>
+								<li class="leaf selectHide-click"><a href="#" class="active">{{t.des}}</a></li>
+								<li class="leaf selectHide-click"><a href="#">{{t.weather}}</a></li>
+								<li class="last leaf selectHide-click"><a href="#">{{t.time}}</a></li>
+							</ul>
+						</li>
+								  
+					</ul>	
+				</li>
+							<li class="leaf"><a href="#">Store Locator</a>|</li>
+							<li class="leaf"><a href="#" style="float:none;">Login</a></li>
+			</ul>
+					</div>
+					<div  class="logo-bar">
+						<div class="col-md-12">
+							<div class="col-md-6 col-sm-5 left-div-icon">
+								<div class="logo-div">
+								
+								<!-- only hamburger icon -->
+									<a class="u-nav hidden-lg hidden-md hidden-sm">
+									  <div class="u-nav-navLine">
+										<div class="u-nav-navLine-middle"></div>
+									  </div>
+									</a>
+								<!-- only hamburger icon -->
+								
+									<a href="#" style="display:table;">
+										<img src="images/logo.png">
+									</a>
+								<!-- left side hamburger menu -->
+									<div class="u-nav-container">
+										<ul>
+											<li><a href="#">DESTINATIONS</a></li>
+											<li><a href="#">HOLIDAYS</a></li>
+											<li><a href="#">DEALS</a></li>
+											<li><a href="#">LIFETIME EXPERIENCES</a></li>
+											<li><a href="#">CRUISES</a></li>
+											<li><a href="#">WEEKEND</a></li>
+											<li><a href="#">TUI VILLAS</a></li>
+											<li><a href="#">STORE LOCATOR</a></li>
+											<li><a href="#">TRAVEL TOOL</a></li>
+											<li><a href="#">DISTANCE CALCULATOR</a></li>
+											<li><a href="#">LOGIN</a></li>
+											
+										</ul>
+									</div>
+								<!-- left side hamburger menu -->
+								
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-7 right-div-icon" style="padding-top:7px;text-align:right;">
+								<a class="telephn-no" href="#">
+									<span class="glyphicon glyphicon-earphone hidden-xs"></span>
+									1800-11-27-37
+								</a>
+								<a class="publsh-btn" href="#" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+									<span class="glyphicon glyphicon-edit	Try it"></span>
+									<span class="hidden-xs"> Publish Travel story </span>
+								</a>
+								<!-- publish travel button popup -->
+								<div id="myModal" class="modal fade" role="dialog">
+								  <div class="modal-dialog modal-sm mymodalmain">
+
+									<!-- Modal content-->
+									<div class="modal-content">
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title">Sign Up With</h4>
+										</div>
+										<div class="modal-body">
+											<div class="social-btns">
+												<ul>
+													<li>
+														<a href="#">
+															<button type="button" class="btn btn-primary">
+																<span><i class="fa fa-facebook"></i></span>
+																FACEBOOK
+															</button>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<button type="button" class="btn btn-danger">
+																<span><i class="fa fa-google-plus"></i></span>
+																GOOGLE +
+															</button>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<button type="button" class="btn btn-info">
+																<span><i class="fa fa-twitter"></i></span>
+																TWITTER
+															</button>
+														</a>
+													</li>
+												</ul>
+												<div class="input-div">
+													<p>Already a member ?</p>
+													<ul>
+														<li>
+															<input type="text" placeholder="Username">
+														</li>
+														<li>
+															<input type="password" placeholder="Password">
+														</li>
+													</ul>
+												</div>
+											</div>
+											
+										</div>
+										<div class="modal-footer">
+											<ul>
+												<li>Register</li>
+												<li>Request new password</li>
+											</ul>
+											<button type="button" class="login-btn btn" data-dismiss="modal" style="">Log in</button>
+										</div>
+									</div>
+
+								  </div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		
